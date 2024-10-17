@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Colors</title>
+    <style>
+      body {
+        padding: 5rem;
+      }
+    </style>
+    </head>
+    <body>
+    1. Colors With Different Shades
+    <!-- https://tailwindcss.com/docs/customizing-colors  -->
+     <div class="container bg-black">
+      <h1 class="text-teal-500">text color</h1>
+      <h1 class="text-blue-700">text color</h1>
+      <h1 class="text-emerald-800">text color</h1>
+      <h1 class="text-cyan-950">text color</h1>
+      <h1 class="text-violet-800">text color</h1>
+      <h1 class="text-fuchsia-700">text color</h1>
+      <h1 class="text-sky-600">text color</h1>
+
+     </div>
+
+    2. Background Colors
+    <!-- https://tailwindcss.com/docs/background-color -->
+     <div class="container bg-black p-7">
+      <div class="bg-zinc-900">text color</div>
+      <div class="bg-red-700">text color</div>
+      <div class="bg-amber-300">text color</div>
+      <div class="bg-yellow-950">text color</div>
+      <div class="bg-lime-400">text color</div>
+      <div class="bg-teal-500">text color</div>
+      <div class="bg-violet-700">text color</div>
+     </div>
+
+
+    3.Text Underline
+    <!-- https://tailwindcss.com/docs/text-decoration-style -->
+     <div class="container bg-black p-7">
+ <p class="underline decoration-solid text-white">The quick brown fox...</p>
+<p class="underline decoration-double text-white">The quick brown fox...</p>
+<p class="underline decoration-dotted text-white">The quick brown fox...</p>
+<p class="underline decoration-dashed text-white">The quick brown fox...</p>
+<p class="underline decoration-wavy text-white">The quick brown fox...</p>
+
+
+
+     </div>
+
+   4. Accent color
+    <!-- https://tailwindcss.com/docs/accent-color -->
+     <div class="container bg-black p-7" >
+      <label>
+        <input type="checkbox" checked> 
+      </label>
+      <label>
+        <input type="checkbox" class="accent-pink-500" checked>
+      </label>
+      <input type="checkbox" class="accent-green-500" checked>
+      <label>
+      <input type="checkbox" class="accent-fuchsia-500" checked>
+    </label>
+    
+     </div>
+
+    5.Arbitrary colors
+    <!-- https://tailwindcss.com/docs/customizing-colors#arbitrary-values -->
+     <div class="container bg-black p-7 flex flex-col">
+      <button class="bg-[#1d4ed8]" text-white> share on Facebook</button>
+      <button class="bg-[#be123c]" text-white> share on Instagram</button>
+      <button class="bg-[#fcd34d]" text-white> share on Snapchat</button>
+     </div>
+  </body>
+</html>

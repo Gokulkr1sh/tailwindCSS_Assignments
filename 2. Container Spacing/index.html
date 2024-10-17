@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Container & Spacing</title>
+    <style>
+      body {
+        padding: 5rem;
+      }
+    </style>
+  </head>
+  <body>
+    1.Margin
+    <!-- https://tailwindcss.com/docs/margin -->
+     <div class="container bg-black p-7">
+     <div class="my-7 text-teal-500">margin top</div>
+     <div class="mx-6 text-green-500">margin</div>
+     <div class="mt-9 text-cyan-900">margin y-axis</div>
+     <div class="m-8 text-blue-500">margin x-axis</div>
+     </div>
+
+    2.Arbitrary Spacing
+     <!-- https://tailwindcss.com/docs/border-spacing#arbitrary-values -->
+      <div class="containers bg-black p-7">
+        <table class="border-separate border-spacing-2 border border-slate-500 ...">
+          <thead>
+            <tr>
+              <th class="border border-cyan-600 text-sky-600">State</th>
+              <th class="border border-cyan-600 text-sky-600">City</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-cyan-700 text-sky-600">Indiana</td>
+              <td class="border border-cyan-700 text-sky-600">Indianapolis</td>
+            </tr>
+            <tr>
+              <td class="border border-cyan-700 text-sky-600">Ohio</td>
+              <td class="border border-cyan-700 text-sky-600">Columbus</td>
+            </tr>
+            <tr>
+              <td class="border border-cyan-700 text-sky-600">Michigan</td>
+              <td class="border border-cyan-700 text-sky-600">Detroit</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    3.Padding
+    <!-- https://tailwindcss.com/docs/padding -->
+     <div class="containers bg-black p-7">
+      <div class="py-8 text-cyan-500">Padding y-axis</div>
+      <div class="pr-1 text-lime-500">Padding right</div>
+      <div class="pb-9 text-yellow-500">Padding bottom</div>
+      <div class="px-7 text-orange-500">Padding x-axis</div>
+     </div>
+
+    <!-- https://tailwindcss.com/docs/space -->
+    4.Space Between X
+    <div class="containers bg-black p-7">
+      <div class="flex space-x-4">
+        <div class="text-yellow-500">01</div>
+        <div class="text-yellow-500">02</div>
+        <div class="text-yellow-500">03</div>
+      </div>
+    </div>
+    5.Space Between Y
+    <div class="containers bg-black p-7">
+      <div class="flex flex-col space-y-4">
+        <div class="text-lime-500">01</div>
+        <div class="text-lime-500">02</div>
+        <div class="text-lime-500">03</div>
+      </div>
+    </div>
+  </body>
+</html>

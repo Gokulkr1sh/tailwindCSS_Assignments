@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Sizing</title>
+  </head>
+  <body class="p-20">
+   1. Width
+    <!-- https://tailwindcss.com/docs/width -->
+     <div class="container bg-black p-7">
+      <div class="w-96 text-red-500 text-5xl">w-96</div>
+      <div class="w-80 text-red-500 text-7xl">w-80</div>
+     </div>
+
+   2. Percentages
+   <div class="container bg-black p-7">
+    <div class="flex space-x-4 text-indigo-500">
+      <div class="w-1/2 bg-indigo-500 text-amber-300 mb-4">w-1/2</div>
+      <div class="w-1/2 bg-indigo-500 text-amber-300 mb-4">w-1/2</div>
+    </div>
+    <div class="flex space-x-4 text-indigo-500">
+      <div class="w-2/5 bg-indigo-500 text-amber-300 mb-4">w-2/5</div>
+      <div class="w-3/5 bg-indigo-500 text-amber-300 mb-4">w-3/5</div>
+    </div>
+    <div class="flex space-x-4 text-indigo-500">
+      <div class="w-1/3 bg-indigo-500 text-amber-300 mb-4">w-1/3</div>
+      <div class="w-2/3 bg-indigo-500 text-amber-300 mb-4">w-2/3</div>
+    </div>
+   </div>
+
+   3. Max Width
+    <!-- https://tailwindcss.com/docs/max-width -->
+     <div class="container bg-black p-7 ">
+      <div class="w-full max-w-96 bg-lime-400 mb-4">max-w-96</div>
+      <div class="w-full max-w-80 bg-lime-400 mb-4">max-w-80</div>
+      <div class="w-full max-w-64 bg-lime-400 mb-4">max-w-64</div>
+     </div>
+
+   4. Width of the viewport
+    <!-- https://tailwindcss.com/docs/width#viewport-width -->
+     <div class="container bg-black p-7">
+      <div class="w-[50vw] bg-cyan-600 mb-4" >
+      
+        Viewport-50
+        <!-- This is a text -->
+      </div>
+      <div class="w-[40vw] bg-cyan-600 mb-4" >
+      
+        Viewport-40
+        <!-- This is a text -->
+      </div>
+      <div class="w-[30vw] bg-cyan-600 mb-4" >
+      
+        Viewport-30
+        <!-- This is a text -->
+      </div>
+      <div class="w-[20vw] bg-cyan-600 mb-4" >
+      
+        Viewport-20
+        <!-- This is a text -->
+      </div>
+      <div class="w-[10vw] bg-cyan-600 mb-4" >
+      
+        Viewport-10
+        <!-- This is a text -->
+      </div>
+     </div>
+
+   5. 100% of container
+    <div class="container bg-purple p-7">
+      <div class="h-56 p-2 bg-purple-600">
+        <div class="size-full text-sky-600 text-center">Size-full</div>
+      </div>
+    </div>
+    6. Arbitrary Width
+    <!-- https://tailwindcss.com/docs/min-width#arbitrary-values -->
+     <div class="container bg-black p-7">
+      <div class="min-w-[220px] bg-sky-600">
+        min-width
+        <!-- ... -->
+      </div>
+      </div>
+     </div>
+
+    7.Height (Most of the same options as widths)
+    <!-- https://tailwindcss.com/docs/height -->
+     <div class="conatiner bg-black p-7 flex justify-center items-end gap-6 ">
+      <div class="h-80 bg-sky-700">h-80</div>
+      <div class="h-64 bg-sky-800">h-64</div>
+      <div class="h-48 bg-sky-800">h-48</div>
+      <div class="h-40 bg-sky-800">h-40</div>
+      <div class="h-32 bg-sky-800">h-32</div>
+     </div>
+
+    8. Min Height
+    <!-- https://tailwindcss.com/docs/min-height -->
+     <div class="container bg-black p-7 flex justify-center items-end gap-6">
+      <div class="h-96 flex items-end gap-6 ">
+        <div class="min-h-80 bg-lime-800">min-h-80</div>
+        <div class="min-h-64 bg-lime-800">min-h-64</div>
+        <div class="min-h-48 bg-lime-800">min-h-48</div>
+        <div class="min-h-40 bg-lime-800">min-h-40</div>
+        <div class="min-h-32 bg-lime-800">min-h-32</div>
+        <div class="min-h-24 bg-lime-800">min-h-24</div>
+        <div class="min-h-full bg-lime-800">min-h-full</div>
+      </div>
+      
+     </div>
+
+    9. Max Height
+    <!-- https://tailwindcss.com/docs/max-height -->
+     <div class="container bg-black p-7 flex justify-center items-end gap-6">
+      <div class="h-96 flex items-end gap-6">
+        <div class="h-full max-h-80 bg-sky-600">max-h-80</div>
+        <div class="h-full max-h-64 bg-sky-600">max-h-64</div>
+        <div class="h-full max-h-48 bg-sky-600">max-h-48</div>
+        <div class="h-full max-h-40 bg-sky-600">max-h-40</div>
+        <div class="h-full max-h-32 bg-sky-600">max-h-32</div>
+        <div class="h-full max-h-24 bg-sky-600">max-h-24</div>
+        <div class="h-full max-h-full bg-sky-600">max-h-full</div>
+      </div>
+     </div>
+
+    10. Full screen height
+    <div class="container bg-black p-7">
+      <div class="h-48">
+        <div class="h-full bg-lime-500">
+          Full screen height
+          <!-- This element will have a height of `12rem` (h-48) -->
+        </div>
+      </div>
+
+    </div>
+
+    11.Width Auto
+    <div class="container bg-black p-7">
+      <div class="w-full md:w-auto bg-cyan-600">
+        Width-auto
+        <!-- ... -->
+      </div>
+    </div>
+  </body>
+</html>

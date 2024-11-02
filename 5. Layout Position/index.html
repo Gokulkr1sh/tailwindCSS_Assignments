@@ -9,17 +9,30 @@
   </head>
   <body class="p-20">
     <!-- https://tailwindcss.com/docs/position -->
-     <div class="container bg-white p-7">
-      <div class="Static parent">
-        <p>Static parent</p>
-        <div class="absolute bottom-0 left-0">
-          <p>Absolute child</p>
+     <div class="container bg-lime-400 w-[200px] h-24">
+      <div class="relative bg-blue-500 p-2 w-full h-full">
+        <p>static parent</p>
+        <div class="absolute bottom-2 right-0 bg-black">
+          <p>absolute child</p>
         </div>
       </div>
      </div>
     <!-- https://tailwindcss.com/docs/display -->
-     <div class="container bg-black p-7">
-
+     <!-- fixed -->
+     
+     <div class="bg-pink-300 w-[400px] h-96 overflow-y-auto">
+      <div class="w-10 h-10 bg-green-500 fixed">1</div>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque earum ullam, laborum consequuntur tempore sapiente?</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem fugiat facilis consequuntur perferendis quibusdam odit!</p>
      </div>
+
+     <!-- sticky -->
+      <div class="bg-pink-300 w-[400px] h-96 overflow-y-auto">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel laborum modi praesentium excepturi explicabo! Vero!
+        </p>
+        <div class="w-10 h-10 bg-green-500 sticky top-6">1</div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos enim ducimus sint, quam quisquam exercitationem aliquam perspiciatis voluptas veritatis voluptatibus!</p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit possimus cum ex. Modi quis quo a commodi, aliquid vitae obcaecati?
+      </div>
   </body>
 </html>
